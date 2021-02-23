@@ -25,7 +25,7 @@ SECRET_KEY = ')8&0rk999wb10uv!c@66zw0!z3i78rbn(_$mzzh+fbw)1%l*lp'
 #SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = (os.environ.get('DEBUG_VALUE') == 'True')
 
 ALLOWED_HOSTS = ['guerrilla-lab.herokuapp.com']
 
